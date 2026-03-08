@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Saksham Puzzle Challenge</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🧠 Saksham Puzzle Challenge</h1>
+
+<div id="menu" class="container">
+
+<h2>Select Difficulty</h2>
+
+<button class="easy" onclick="startGame('easy')">Easy</button>
+<button class="medium" onclick="startGame('medium')">Medium</button>
+<button class="hard" onclick="startGame('hard')">Hard</button>
+
+</div>
+
+<div id="game" class="container">
+
+<h3 id="progress"></h3>
+<p id="question"></p>
+
+<input id="answer" placeholder="Type your answer">
+
+<br>
+
+<button onclick="checkAnswer()">Submit</button>
+<button onclick="showHint()">Hint</button>
+
+<p id="hint"></p>
+
+</div>
+
+<div id="result" class="container">
+
+<h2>Game Finished</h2>
+
+<h3 id="score"></h3>
+
+<div id="wrong"></div>
+
+<button onclick="location.reload()">Play Again</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
